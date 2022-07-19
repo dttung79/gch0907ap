@@ -7,17 +7,14 @@ namespace DemoStudent
         static void Main(string[] args)
         {
             Student john = new Student();
-            Console.WriteLine(john.GetName());
-            //Console.WriteLine(john.age);
-            //Console.WriteLine(john.gpa);
-
-            Student paul = new Student("Paul", 20, 3.5);
-            paul.SetName("");
-            // paul.age = -21;
-            // paul.gpa = -3.5;
-            Console.WriteLine(paul.GetName());
-            // Console.WriteLine(paul.age);
-            // Console.WriteLine(paul.gpa);
+            john.Name = "John"; // call setter of attribute name
+            john.Age = 20; // call setter of attribute age
+            john.GPA = 7.5; // call setter of attribute gpa
+            Console.WriteLine(john.Name); // call getter of attribute name
+            Console.WriteLine(john.Age); // call getter of attribute age
+            Console.WriteLine(john.GPA); // call getter of attribute gpa
+            //john.PrintInfo(); // call method PrintInfo()
+            john.ShowInfo();
         }
     }
 }
