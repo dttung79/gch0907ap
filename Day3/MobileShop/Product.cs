@@ -34,5 +34,15 @@ namespace MobileShop
             RAM = ram;
             Storage = storage;
         }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine("Product info:");
+            Console.WriteLine("Name: {0}", Name);
+            Console.WriteLine("Color: {0}", Color);
+            Console.WriteLine("Price: {0}", Price);
+            Console.WriteLine("RAM: {0}", RAM);
+            Console.WriteLine("Storage: {0}", Storage);
+        }
     }
 }
