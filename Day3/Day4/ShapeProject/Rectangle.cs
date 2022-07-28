@@ -22,11 +22,11 @@ namespace ShapeProject
             Width = width;
             Height = height;
         }
-        public new double Area()
+        public override double Area()
         {
             return Width * Height;
         }
-        public new void Print()
+        public override void Print()
         {
             base.Print();
             Console.WriteLine("Width: {0}, Height: {1}", Width, Height);

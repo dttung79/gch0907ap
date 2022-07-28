@@ -21,11 +21,11 @@ namespace ShapeProject
             stype = "Generic Shape";
             Name = name;
         }
-        public double Area()
+        public virtual double Area()
         {
             return 0.0;
         }
-        public void Print()
+        public virtual void Print()
         {
             Console.WriteLine("{0} {1}", SType, Name);
         }

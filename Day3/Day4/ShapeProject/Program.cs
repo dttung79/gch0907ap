@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ShapeProject
 {
@@ -6,9 +7,16 @@ namespace ShapeProject
     {
         static void Main(string[] args)
         {
-            Square sq = new Square("ABCD", 5.0);
-            sq.Print();
-            Console.WriteLine("Area: {0}", sq.Area());
+            List<Shape> shapes = new List<Shape>();
+            shapes.Add(new Circle("C1", 1.0));
+            shapes.Add(new Rectangle("ABCD", 2.0, 4.0));
+            shapes.Add(new Square("MNPQ", 3.0));
+
+            foreach (Shape s in shapes)
+            {
+                s.Print();
+                Console.WriteLine("Area: {0}", s.Area());
+            }
         }
     }
 }

@@ -19,11 +19,11 @@ namespace ShapeProject
             stype = "Circle";
             Radius = radius;
         }
-        public new double Area()
+        public override double Area()
         {
             return Math.PI * Radius * Radius;
         }
-        public new void Print()
+        public override void Print()
         {
             base.Print();
             Console.WriteLine("Radius: {0}", Radius);
