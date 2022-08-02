@@ -2,7 +2,7 @@ using System;
 
 namespace ShapeProject
 {
-    public class Shape
+    public abstract class Shape
     {
         protected string stype;
         public string SType
@@ -21,10 +21,8 @@ namespace ShapeProject
             stype = "Generic Shape";
             Name = name;
         }
-        public virtual double Area()
-        {
-            return 0.0;
-        }
+        public abstract double Area();
+
         public virtual void Print()
         {
             Console.WriteLine("{0} {1}", SType, Name);
